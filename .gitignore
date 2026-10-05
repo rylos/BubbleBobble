@@ -1,9 +1,6 @@
-.vs/
-build/
-out/
-Scores/
-*.idea
-*.user
-compile_commands.json
-
-
+node_modules/
+dist/
+assets-src/bubbros-1.6.2/
+__pycache__/
+*.pyc
+.vite/

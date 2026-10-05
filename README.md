@@ -1,21 +1,79 @@
-# Bubble Bobble
-A fresh take on the [Original Game](https://en.wikipedia.org/wiki/Bubble_Bobble), taking inspiration from both the NES and Arcade versions.
+# Bubble Bobble DX
 
-# [Play The Game!](https://julianrijken.com/BubbleBobbleWeb/BubbleBobble)
+A web remake of the arcade **Bubble Bobble** (Taito, 1986) that merges the best of two fan projects:
 
+- **The Bub's Brothers** (Armin Rigo, David Gowers, McSebi): high-resolution 32 px sprites, the 400 levels of the
+  Mac *Bub & Bob* (4 sets of 100), the game logic (player physics, bubbles and winds, monsters, specials, bonuses,
+  mini-games), sounds and music.
+- **Julgen Bubble Bobble** (Julian Rijken, the project this repository was forked from): the arcade sound effects,
+  *The Quest Begins* theme, the NES logo and font.
 
-## Made With Julgen
-<img alt="Julgen Logo" src="./ReadmeContent/Julgen_Logo_Large.png" width="70" align="left"/>
+It is written from scratch in TypeScript (Canvas 2D + WebAudio, no engine) and runs in any modern browser, on
+desktop and mobile, also installable as an app (PWA).
 
-Bubble Bobble is powered by [Julgen](https://github.com/JulianRijken/Julgen)
+## Play
 
-Julgen was originally developed for Bubble Bobble
+```sh
+npm install
+npm run dev        # http://localhost:5173
+npm run build      # static site in dist/ (deploy anywhere)
+```
 
-## Gameplay
-![intro mp4](https://github.com/user-attachments/assets/774e6101-6657-4664-86ee-8b2610725707)
-![1 mp4](https://github.com/user-attachments/assets/ad42504c-cc6e-4d14-a406-43a24c49340e)
-![3 mp4](https://github.com/user-attachments/assets/95fc0b0a-f94c-4e86-b0a6-9dc61b63d62b)
-![score mp4](https://github.com/user-attachments/assets/f07c097e-a277-4a96-be86-6d90b16dc076)
+| | Player 1 | Player 2 |
+|---|---|---|
+| Move | ← → | A D |
+| Jump | X / ↑ / Space | W / G |
+| Bubble | Z / C / Ctrl | F / Q |
+| Start / join | Enter / 1 | 2 |
+| Pause | Esc / P | |
 
-## License
-BubbleBubble is free software; you can redistribute it and/or modify it under the terms of the [GNU General Public License](LICENSE.md) as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
+Gamepads: d-pad/stick, A jump, B/X bubble, Start. On phones on-screen buttons appear automatically.
+
+## Features
+
+- Arcade rules: 3 lives, extra life at 30 000 and every 100 000, EXTEND letters, fruit chains
+  (1000 → 64 000), *Hurry up!* and the invincible Baron von Blubba, continues, 2 players co-op at any time,
+  boss fight on round 100, high-score table with initials.
+- 4 level sets × 100 rounds (*Bub & Bob*, *Lost Levels*, *House of Fun*, *Arena*), choose the starting round.
+- Wind currents, vertical wrap-around, bubble riding, chain pops, fire / water / thunder bubbles.
+- 30+ bonus items (speed shoe, rapid fire, special bubbles, crosses, umbrellas that skip rounds, potions,
+  clock, ring, book of stars, bomb, extend...).
+- Extra games from The Bub's Brothers (Arkanoid, Tetris, Pac-Man, Galaga, Lemmings, Tron, biplanes).
+- CRT filter, volume settings, fullscreen.
+
+## Assets pipeline
+
+The original assets are converted by the Python tools in `tools/` (needs Python 3 with numpy + Pillow, and ffmpeg):
+
+```sh
+tar xzf bubbros-1.6.2.tar.gz -C assets-src   # from http://bub-n-bros.sourceforge.net/
+npm run assets                                # = python3 tools/build_all.py
+```
+
+| Tool | Output |
+|---|---|
+| `build_sprites.py` | `public/assets/sprites/*.png` (PPM → PNG with alpha, player colours from `palettes.dat`) and `sprites.json` (sprite id → sheet rect, same ids as The Bub's Brothers) |
+| `build_levels.py` | `public/assets/levels/<set>.json` (walls, winds, monsters, flags) and per-level wall layers with arcade drop shadows, decoded from the Mac resource forks |
+| `build_audio.py` | `public/assets/audio/` cleaned OGG effects and music with seamless loop points, `audio.json` (see `tools/audio_identification.md`) |
+| `build_font.py` | `public/assets/sprites/font.png` bitmap font from the NES TTF |
+
+`node tools/shot.mjs <url> <outdir> "<steps>"` drives the game in headless Chromium and saves screenshots
+(used for testing; in dev builds the running game is exposed as `window.bb`).
+
+## Code map
+
+```
+src/engine/   gfx (sprites, bitmap font), input (keyboard/gamepad/touch), audio (WebAudio)
+src/game/     world (round flow and rules), level, dragon, bubble, monster, items, specials, boss, hud
+src/extras/   mini-games
+src/scenes.ts title, intro, game, name entry, high scores, options
+```
+
+## Credits and licenses
+
+- Bubble Bobble © 1986 Taito. This is a non-commercial fan project.
+- The Bub's Brothers code © 2003-2005 Armin Rigo (MIT); graphics by David Gowers based on McSebi's;
+  sounds, music and levels from *Bub & Bob 1* by Sebastian Wegner (McSebi), released under the revised Artistic
+  License.
+- Julgen Bubble Bobble © Julian Rijken, GPL-3.0.
+- This remake is distributed under the GNU GPL v3 (see `LICENSE.md`).

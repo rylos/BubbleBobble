@@ -1,0 +1,442 @@
+{
+  "sfx": {
+    "alarm": {
+      "file": "sfx/alarm.ogg",
+      "volume": 1.0,
+      "source": "julgen",
+      "duration": 0.774,
+      "orig": "Bubble Bobble SFX (11).wav",
+      "confidence": "low"
+    },
+    "appear": {
+      "file": "sfx/appear.ogg",
+      "volume": 1.0,
+      "source": "julgen",
+      "duration": 0.58,
+      "orig": "Bubble Bobble SFX (10).wav",
+      "confidence": "low"
+    },
+    "bell": {
+      "file": "sfx/bell.ogg",
+      "volume": 1.0,
+      "source": "julgen",
+      "duration": 0.771,
+      "orig": "Bubble Bobble SFX (12).wav",
+      "confidence": "low"
+    },
+    "capture": {
+      "file": "sfx/capture.ogg",
+      "volume": 1.0,
+      "source": "julgen",
+      "duration": 0.275,
+      "orig": "Bubble Bobble SFX (4).wav",
+      "confidence": "low"
+    },
+    "chain": {
+      "file": "sfx/chain.ogg",
+      "volume": 1.0,
+      "source": "julgen",
+      "duration": 0.967,
+      "orig": "Bubble Bobble SFX (14).wav",
+      "confidence": "low"
+    },
+    "coin": {
+      "file": "sfx/coin.ogg",
+      "volume": 1.0,
+      "source": "julgen",
+      "duration": 0.402,
+      "orig": "Bubble Bobble SFX (7).wav",
+      "confidence": "low"
+    },
+    "die": {
+      "file": "sfx/die.ogg",
+      "volume": 1.0,
+      "source": "bubbros",
+      "duration": 1.274,
+      "orig": "sounds/die.wav"
+    },
+    "ext1_brick": {
+      "file": "sfx/ext1_brick.ogg",
+      "volume": 1.0,
+      "source": "bubbros",
+      "duration": 0.655,
+      "orig": "ext1/brick.wav"
+    },
+    "ext1_wall": {
+      "file": "sfx/ext1_wall.ogg",
+      "volume": 1.0,
+      "source": "bubbros",
+      "duration": 0.295,
+      "orig": "ext1/wall.wav"
+    },
+    "ext3_shoot": {
+      "file": "sfx/ext3_shoot.ogg",
+      "volume": 1.0,
+      "source": "bubbros",
+      "duration": 0.295,
+      "orig": "ext3/shoot.wav"
+    },
+    "ext5_ouch": {
+      "file": "sfx/ext5_ouch.ogg",
+      "volume": 1.0,
+      "source": "bubbros",
+      "duration": 0.222,
+      "orig": "ext5/ouch.wav"
+    },
+    "ext6_crash": {
+      "file": "sfx/ext6_crash.ogg",
+      "volume": 1.0,
+      "source": "bubbros",
+      "duration": 0.588,
+      "orig": "ext6/crash.wav"
+    },
+    "ext7_fire": {
+      "file": "sfx/ext7_fire.ogg",
+      "volume": 1.0,
+      "source": "bubbros",
+      "duration": 0.294,
+      "orig": "ext7/fire.wav"
+    },
+    "ext7_hit": {
+      "file": "sfx/ext7_hit.ogg",
+      "volume": 1.0,
+      "source": "bubbros",
+      "duration": 0.07,
+      "orig": "ext7/hit.wav"
+    },
+    "extra": {
+      "file": "sfx/extra.ogg",
+      "volume": 1.0,
+      "source": "bubbros",
+      "duration": 0.27,
+      "orig": "sounds/extra.wav"
+    },
+    "extralife": {
+      "file": "sfx/extralife.ogg",
+      "volume": 1.0,
+      "source": "bubbros",
+      "duration": 0.918,
+      "orig": "sounds/extralife.wav"
+    },
+    "fanfare": {
+      "file": "sfx/fanfare.ogg",
+      "volume": 1.0,
+      "source": "julgen",
+      "duration": 1.646,
+      "orig": "Bubble Bobble SFX (20).wav",
+      "confidence": "low"
+    },
+    "fire": {
+      "file": "sfx/fire.ogg",
+      "volume": 1.0,
+      "source": "julgen",
+      "duration": 1.006,
+      "orig": "Bubble Bobble SFX (15).wav",
+      "confidence": "low"
+    },
+    "fruit": {
+      "file": "sfx/fruit.ogg",
+      "volume": 1.0,
+      "source": "julgen",
+      "duration": 0.335,
+      "orig": "Bubble Bobble SFX (5).wav",
+      "confidence": "med"
+    },
+    "fruit_mac": {
+      "file": "sfx/fruit_mac.ogg",
+      "volume": 1.0,
+      "source": "bubbros",
+      "orig": "sounds/fruit.wav",
+      "duration": 0.29
+    },
+    "hell": {
+      "file": "sfx/hell.ogg",
+      "volume": 1.0,
+      "source": "bubbros",
+      "duration": 3.697,
+      "orig": "sounds/hell.wav"
+    },
+    "hurry": {
+      "file": "sfx/hurry.ogg",
+      "volume": 1.0,
+      "source": "bubbros",
+      "duration": 1.561,
+      "orig": "sounds/hurry.wav"
+    },
+    "jingle": {
+      "file": "sfx/jingle.ogg",
+      "volume": 1.0,
+      "source": "julgen",
+      "duration": 3.598,
+      "orig": "Bubble Bobble SFX (21).wav",
+      "confidence": "low"
+    },
+    "jump": {
+      "file": "sfx/jump.ogg",
+      "volume": 1.0,
+      "source": "julgen",
+      "duration": 0.546,
+      "orig": "Jump.wav",
+      "confidence": "high"
+    },
+    "jump_mac": {
+      "file": "sfx/jump_mac.ogg",
+      "volume": 1.0,
+      "source": "bubbros",
+      "orig": "sounds/jump.wav",
+      "duration": 0.491
+    },
+    "kill": {
+      "file": "sfx/kill.ogg",
+      "volume": 1.0,
+      "source": "julgen",
+      "duration": 0.259,
+      "orig": "Bubble Bobble SFX (3).wav",
+      "confidence": "low"
+    },
+    "letsgo": {
+      "file": "sfx/letsgo.ogg",
+      "volume": 1.0,
+      "source": "bubbros",
+      "duration": 0.851,
+      "orig": "sounds/letsgo.wav"
+    },
+    "letter": {
+      "file": "sfx/letter.ogg",
+      "volume": 1.0,
+      "source": "julgen",
+      "duration": 0.348,
+      "orig": "Bubble Bobble SFX (6).wav",
+      "confidence": "low"
+    },
+    "lightning": {
+      "file": "sfx/lightning.ogg",
+      "volume": 1.0,
+      "source": "julgen",
+      "duration": 1.375,
+      "orig": "Bubble Bobble SFX (18).wav",
+      "confidence": "low"
+    },
+    "pop": {
+      "file": "sfx/pop.ogg",
+      "volume": 1.0,
+      "source": "julgen",
+      "duration": 0.229,
+      "orig": "Bubble Bobble SFX (1).wav",
+      "confidence": "med"
+    },
+    "pop_mac": {
+      "file": "sfx/pop_mac.ogg",
+      "volume": 1.0,
+      "source": "bubbros",
+      "orig": "sounds/pop.wav",
+      "duration": 0.084
+    },
+    "shh": {
+      "file": "sfx/shh.ogg",
+      "volume": 1.0,
+      "source": "bubbros",
+      "duration": 0.821,
+      "orig": "sounds/shh.wav"
+    },
+    "shoot": {
+      "file": "sfx/shoot.ogg",
+      "volume": 1.0,
+      "source": "julgen",
+      "duration": 0.26,
+      "orig": "Bubble Bobble SFX (2).wav",
+      "confidence": "med"
+    },
+    "sparkle": {
+      "file": "sfx/sparkle.ogg",
+      "volume": 1.0,
+      "source": "julgen",
+      "duration": 0.536,
+      "orig": "Bubble Bobble SFX (8).wav",
+      "confidence": "low"
+    },
+    "special": {
+      "file": "sfx/special.ogg",
+      "volume": 1.0,
+      "source": "julgen",
+      "duration": 1.339,
+      "orig": "Bubble Bobble SFX (16).wav",
+      "confidence": "low"
+    },
+    "spin": {
+      "file": "sfx/spin.ogg",
+      "volume": 1.0,
+      "source": "julgen",
+      "duration": 0.965,
+      "orig": "Bubble Bobble SFX (13).wav",
+      "confidence": "low"
+    },
+    "spin_long": {
+      "file": "sfx/spin_long.ogg",
+      "volume": 1.0,
+      "source": "julgen",
+      "duration": 1.363,
+      "orig": "Bubble Bobble SFX (17).wav",
+      "confidence": "low"
+    },
+    "water": {
+      "file": "sfx/water.ogg",
+      "volume": 1.0,
+      "source": "julgen",
+      "duration": 1.557,
+      "orig": "Bubble Bobble SFX (19).wav",
+      "confidence": "low"
+    },
+    "yippee": {
+      "file": "sfx/yippee.ogg",
+      "volume": 1.0,
+      "source": "bubbros",
+      "duration": 0.535,
+      "orig": "sounds/yippee.wav"
+    }
+  },
+  "music": {
+    "main": {
+      "file": "music/main.ogg",
+      "source": "julgen",
+      "orig": "The Quest Begins.ogg",
+      "loop": true,
+      "loopStart": 56.393084,
+      "loopEnd": 145.855646,
+      "loopMatch": 0.996,
+      "volume": 0.8,
+      "duration": 145.856
+    },
+    "intro": {
+      "file": "music/intro.ogg",
+      "source": "bubbros",
+      "orig": "music/Snd1-8.wav",
+      "loop": false,
+      "loopStart": 0.0,
+      "loopEnd": null,
+      "volume": 0.8,
+      "duration": 10.946
+    },
+    "main_mac": {
+      "file": "music/main_mac.ogg",
+      "source": "bubbros",
+      "orig": "music/Snd2-8.wav",
+      "loop": true,
+      "loopStart": 0.0,
+      "loopEnd": null,
+      "volume": 0.8,
+      "duration": 244.402
+    },
+    "potion": {
+      "file": "music/potion.ogg",
+      "source": "bubbros",
+      "orig": "music/Snd3-8.wav",
+      "loop": true,
+      "loopStart": 0.0,
+      "loopEnd": null,
+      "volume": 0.8,
+      "duration": 42.867
+    },
+    "modern": {
+      "file": "music/modern.ogg",
+      "source": "bubbros",
+      "orig": "music/Snd4-8.wav",
+      "loop": false,
+      "loopStart": 0.0,
+      "loopEnd": null,
+      "volume": 0.8,
+      "duration": 7.293
+    },
+    "extend": {
+      "file": "music/extend.ogg",
+      "source": "bubbros",
+      "orig": "music/Snd5-8.wav",
+      "loop": false,
+      "loopStart": 0.0,
+      "loopEnd": null,
+      "volume": 0.8,
+      "duration": 11.001
+    },
+    "main2": {
+      "file": "music/main2.ogg",
+      "source": "bubbros",
+      "orig": "music/Snd6-8.wav",
+      "loop": true,
+      "loopStart": 18.367778,
+      "loopEnd": 197.707778,
+      "loopMatch": 0.999,
+      "volume": 0.8,
+      "duration": 197.708
+    },
+    "ext1": {
+      "file": "music/ext1.ogg",
+      "source": "bubbros",
+      "orig": "ext1/music.wav",
+      "loop": true,
+      "loopStart": 0.0,
+      "loopEnd": null,
+      "volume": 0.8,
+      "duration": 16.979
+    },
+    "ext2": {
+      "file": "music/ext2.ogg",
+      "source": "bubbros",
+      "orig": "ext2/music.wav",
+      "loop": true,
+      "loopStart": 0.0,
+      "loopEnd": null,
+      "volume": 0.8,
+      "duration": 8.004
+    },
+    "ext3": {
+      "file": "music/ext3.ogg",
+      "source": "bubbros",
+      "orig": "ext3/music.wav",
+      "loop": true,
+      "loopStart": 0.0,
+      "loopEnd": null,
+      "volume": 0.8,
+      "duration": 6.442
+    },
+    "ext4": {
+      "file": "music/ext4.ogg",
+      "source": "bubbros",
+      "orig": "ext4/music.wav",
+      "loop": true,
+      "loopStart": 0.0,
+      "loopEnd": null,
+      "volume": 0.8,
+      "duration": 12.846
+    },
+    "ext5": {
+      "file": "music/ext5.ogg",
+      "source": "bubbros",
+      "orig": "ext5/music.wav",
+      "loop": true,
+      "loopStart": 0.0,
+      "loopEnd": null,
+      "volume": 0.8,
+      "duration": 7.855
+    },
+    "ext6": {
+      "file": "music/ext6.ogg",
+      "source": "bubbros",
+      "orig": "ext6/music.wav",
+      "loop": true,
+      "loopStart": 0.0,
+      "loopEnd": null,
+      "volume": 0.8,
+      "duration": 19.547
+    },
+    "ext7": {
+      "file": "music/ext7.ogg",
+      "source": "bubbros",
+      "orig": "ext7/music.wav",
+      "loop": true,
+      "loopStart": 0.0,
+      "loopEnd": null,
+      "volume": 0.8,
+      "duration": 17.227
+    }
+  }
+}

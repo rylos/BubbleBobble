@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+    <meta name="theme-color" content="#000000" />
+    <title>Bubble Bobble DX</title>
+    <link rel="icon" type="image/png" href="assets/ui/icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+  </head>
+  <body>
+    <main id="stage">
+      <canvas id="screen" width="512" height="448"></canvas>
+      <div id="crt"></div>
+    </main>
+    <div id="touch">
+      <div class="dpad">
+        <button data-btn="up" class="up" aria-label="up">&#9650;&#xFE0E;</button>
+        <button data-btn="left" class="left" aria-label="left">&#9668;</button>
+        <button data-btn="right" class="right" aria-label="right">&#9658;</button>
+        <button data-btn="down" class="down" aria-label="down">&#9660;&#xFE0E;</button>
+      </div>
+      <div class="actions">
+        <button data-btn="pause" class="small" aria-label="pause">II</button>
+        <button data-btn="start confirm" class="small" aria-label="start">START</button>
+        <button data-btn="fire confirm" class="fire" aria-label="bubble">B</button>
+        <button data-btn="jump" class="jump" aria-label="jump">A</button>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
