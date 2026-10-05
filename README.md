@@ -9,15 +9,20 @@ A web remake of the arcade **Bubble Bobble** (Taito, 1986) that merges the best 
   *The Quest Begins* theme, the NES logo and font.
 
 It is written from scratch in TypeScript (Canvas 2D + WebAudio, no engine) and runs in any modern browser, on
-desktop and mobile, also installable as an app (PWA).
+desktop and mobile (it can be added to the home screen as a full-screen app; it needs a connection, there is no
+offline mode).
 
 ## Play
+
+Requires Node.js 18+. The generated assets are committed, so playing needs no Python or source assets.
 
 ```sh
 npm install
 npm run dev        # http://localhost:5173
 npm run build      # static site in dist/ (deploy anywhere)
 ```
+
+Menus: arrows to move, Enter / Space / Z / X to confirm, Esc to go back.
 
 | | Player 1 | Player 2 |
 |---|---|---|
@@ -41,9 +46,20 @@ Gamepads: d-pad/stick, A jump, B/X bubble, Start. On phones on-screen buttons ap
 - Extra games from The Bub's Brothers (Arkanoid, Tetris, Pac-Man, Galaga, Lemmings, Tron, biplanes).
 - CRT filter, volume settings, fullscreen.
 
+## Source projects
+
+| Project | What it gave | Where |
+|---|---|---|
+| The Bub's Brothers 1.6.2 (Python) | sprites, levels, game logic, mini-games, Mac sounds and music | http://bub-n-bros.sourceforge.net/ — tarball `bubbros-1.6.2.tar.gz`; technical notes in `docs/bubbros-spec.md` |
+| Julgen Bubble Bobble (C++) | arcade sound effects, *The Quest Begins*, NES logo and font | https://github.com/JulianRijken/BubbleBobble (engine https://github.com/JulianRijken/Julgen); the old C++ code is in this repo's history at commit `6a59ee9`; notes in `docs/julgen-spec.md` |
+
+`CLAUDE.md` summarises where to look in each project and the conventions used here.
+
 ## Assets pipeline
 
-The original assets are converted by the Python tools in `tools/` (needs Python 3 with numpy + Pillow, and ffmpeg):
+Only needed to regenerate `public/assets/`. The original assets are converted by the Python tools in `tools/`
+(needs Python 3 with numpy + Pillow, and ffmpeg). The Julgen assets are already in `assets-src/julgen/`; The Bub's
+Brothers must be extracted (it is gitignored):
 
 ```sh
 tar xzf bubbros-1.6.2.tar.gz -C assets-src   # from http://bub-n-bros.sourceforge.net/
@@ -67,6 +83,8 @@ src/engine/   gfx (sprites, bitmap font), input (keyboard/gamepad/touch), audio 
 src/game/     world (round flow and rules), level, dragon, bubble, monster, items, specials, boss, hud
 src/extras/   mini-games
 src/scenes.ts title, intro, game, name entry, high scores, options
+tools/        asset pipeline (Python) and headless test runner
+docs/         technical notes on the two source projects
 ```
 
 ## Credits and licenses
